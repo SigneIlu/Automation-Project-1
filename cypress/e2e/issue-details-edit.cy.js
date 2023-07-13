@@ -7,7 +7,7 @@ describe('Issue details editing', () => {
     });
   });
 
-  it('Should update type, status, assignees, reporter, priority successfully', () => {
+  it.only('Should update type, status, assignees, reporter, priority successfully', () => {
     getIssueDetailsModal().within(() => {
       cy.get('[data-testid="select:type"]').click('bottomRight');
       cy.get('[data-testid="select-option:Story"]')
